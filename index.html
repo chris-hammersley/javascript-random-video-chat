@@ -28,7 +28,7 @@
     <head>
         <title>Random Video Dating App for Lonely People</title>
         <link rel="stylesheet" href="main.css" type="text/css" />
-        <script type="text/javascript" src="../../Winwheel.js"></script>
+        <script type="text/javascript" src="Winwheel.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     </head>
     <body>
@@ -58,7 +58,7 @@
                                 </tr>
                             </table>
                             <br />
-                            <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
+                            <img id="spin_button" src="video-chat/spin_off.png" alt="Spin" onClick="startSpin();" />
                             <br /><br />
                             &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
                         </div>
@@ -88,13 +88,13 @@
                 'drawMode'          : 'segmentImage',    // Must be segmentImage to draw wheel using one image per segemnt.
                 'segments'          :                    // Define segments including image and text.
                 [
-                   {'image' : 'ryan.jpg',  'text' : 'Ryan'},
-                   {'image' : 'yanina.jpg',   'text' : 'Yanina'},
-                   {'image' : 'alan.jpg',  'text' : 'Alan'},
-                   {'image' : 'jake.jpg',  'text' : 'Jake'},
-                   {'image' : 'Liv.jpg', 'text' : 'Liv'},
-                   {'image' : 'naomi.jpg', 'text' : 'Naomi'},
-                   {'image' : 'julian.jpg',  'text' : 'Julian'}
+                   {'image' : 'video-chat/ryan.jpg',  'text' : 'Ryan'},
+                   {'image' : 'video-chat/yanina.jpg',   'text' : 'Yanina'},
+                   {'image' : 'video-chat/alan.jpg',  'text' : 'Alan'},
+                   {'image' : 'video-chat/jake.jpg',  'text' : 'Jake'},
+                   {'image' : 'video-chat/Liv.jpg', 'text' : 'Liv'},
+                   {'image' : 'video-chat/naomi.jpg', 'text' : 'Naomi'},
+                   {'image' : 'video-chat/julian.jpg',  'text' : 'Julian'}
                 ],
                 'animation' :           // Specify the animation to use.
                 {
@@ -142,7 +142,7 @@
                     wheelPower = powerLevel;
 
                     // Light up the spin button by changing it's source image and adding a clickable class to it.
-                    document.getElementById('spin_button').src = "spin_on.png";
+                    document.getElementById('spin_button').src = "video-chat/spin_on.png";
                     document.getElementById('spin_button').className = "clickable";
                 }
             }
@@ -171,7 +171,7 @@
                     }
 
                     // Disable the spin button so can't click again while wheel is spinning.
-                    document.getElementById('spin_button').src       = "spin_off.png";
+                    document.getElementById('spin_button').src       = "video-chat/spin_off.png";
                     document.getElementById('spin_button').className = "";
 
                     // Begin the spin animation by calling startAnimation on the wheel object.
