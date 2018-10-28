@@ -101,10 +101,27 @@
                 {
                     'type'     : 'spinToStop',
                     'duration' : 5,     // Duration in seconds.
-                    'spins'    : 7,     // Number of complete spins.
+                    'spins'    : 7,     // Number of complete spins
+                    'callbackSound' : playSound,
                     'callbackFinished' : alertPrize
                 }
             });
+
+            // Var used for tick sound
+            var audio = new Audio('video-chat/tick.mp3');  // Create audio object and load desired file.
+ 
+             // -------------------------------------------------------
+            // Function to handle the callbackSound ticking.
+            // -------------------------------------------------------
+            function playSound()
+            {
+                // Stop and rewind the sound (stops it if already playing).
+                audio.pause();
+                audio.currentTime = 0;
+         
+                // Play the sound.
+                audio.play();
+            }
 
             // Vars used by the code in this page to do power controls.
             var wheelPower    = 0;
