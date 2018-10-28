@@ -26,18 +26,16 @@
 -->
 <html>
     <head>
-        <title>HTML5 Canvas Winning Wheel</title>
+        <title>Random Video Dating App for Lonely People</title>
         <link rel="stylesheet" href="main.css" type="text/css" />
         <script type="text/javascript" src="../../Winwheel.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     </head>
     <body>
         <div align="center">
-            <h1>Winwheel.js example wheel - one image per segment</h1>
+            <h1>Random Video Dating App for Lonely People</h1>
             <br />
-            <p>Here is an example of a wheel created using one image per segment, also includes code drawn text.</p>
-            <br />
-            <p>Choose a power setting then press the Spin button.</p>
+            <p>Choose an attraction level then press the Spin button.</p>
             <br />
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
@@ -47,7 +45,7 @@
                             <br />
                             <table class="power" cellpadding="10" cellspacing="0">
                                 <tr>
-                                    <th align="center">Power</th>
+                                    <th align="center">Attraction Level</th>
                                 </tr>
                                 <tr>
                                     <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
@@ -76,7 +74,7 @@
         <script>
             // Create new wheel object specifying the parameters at creation time.
             var theWheel = new Winwheel({
-                'numSegments'       : 8,                 // Specify number of segments.
+                'numSegments'       : 7,                 // Specify number of segments.
                 'outerRadius'       : 200,               // Set outer radius so wheel fits inside the background.
                 'drawText'          : true,              // Code drawn text can be used with segment images.
                 'textFontSize'      : 16,
@@ -90,20 +88,19 @@
                 'drawMode'          : 'segmentImage',    // Must be segmentImage to draw wheel using one image per segemnt.
                 'segments'          :                    // Define segments including image and text.
                 [
-                   {'image' : 'jane.png',  'text' : 'Jane'},
-                   {'image' : 'tom.png',   'text' : 'Tom'},
-                   {'image' : 'mary.png',  'text' : 'Mary'},
-                   {'image' : 'alex.png',  'text' : 'Alex'},
-                   {'image' : 'sarah.png', 'text' : 'Sarah'},
-                   {'image' : 'bruce.png', 'text' : 'Bruce'},
-                   {'image' : 'rose.png',  'text' : 'Rose'},
-                   {'image' : 'steve.png', 'text' : 'Steve'}
+                   {'image' : 'ryan.jpg',  'text' : 'Ryan'},
+                   {'image' : 'yanina.jpg',   'text' : 'Yanina'},
+                   {'image' : 'alan.jpg',  'text' : 'Alan'},
+                   {'image' : 'jake.jpg',  'text' : 'Jake'},
+                   {'image' : 'Liv.jpg', 'text' : 'Liv'},
+                   {'image' : 'naomi.jpg', 'text' : 'Naomi'},
+                   {'image' : 'julian.jpg',  'text' : 'Julian'}
                 ],
                 'animation' :           // Specify the animation to use.
                 {
                     'type'     : 'spinToStop',
                     'duration' : 5,     // Duration in seconds.
-                    'spins'    : 8,     // Number of complete spins.
+                    'spins'    : 7,     // Number of complete spins.
                     'callbackFinished' : alertPrize
                 }
             });
@@ -209,7 +206,7 @@
             function alertPrize(indicatedSegment)
             {
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-                alert(indicatedSegment.text + ' says Hi');
+                alert(indicatedSegment.text + ' says Hi! Are you ready to chat?');
             }
         </script>
     </body>
