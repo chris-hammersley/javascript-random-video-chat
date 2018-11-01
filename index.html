@@ -31,12 +31,17 @@
         <link rel="stylesheet" href="video-chat/main.css" type="text/css" />
         <script type="text/javascript" src="Winwheel.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="/video-chat/showvideo.js"></script>
+
     </head>
     <body>
         <div align="center">
             <h1>Random Video Dating App for Lonely People</h1>
             <br />
-            <p>Choose an attraction level then press the Spin button.</p>
+            <p>Choose an attraction level then Spin.</p>
             <br />
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
@@ -46,7 +51,7 @@
                             <br />
                             <table class="power" cellpadding="10" cellspacing="0">
                                 <tr>
-                                    <th align="center">Attraction Level</th>
+                                    <th align="center">Attraction or Interaction Level</th>
                                 </tr>
                                 <tr>
                                     <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
@@ -63,10 +68,19 @@
                             <br /><br />
                             &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
                         </div>
+                        <div id="videochatwindow" class="container" hidden>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="videochatframe">
+                                        <iframe src="//player.vimeo.com/video/16452071" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                     <td width="421" height="564" class="the_wheel" align="center" valign="center">
                         <canvas id="canvas" width="420" height="420">
-                            <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                            <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try a browser like Chrome or Firefox.</p>
                         </canvas>
                     </td>
                 </tr>
