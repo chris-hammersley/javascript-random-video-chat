@@ -50,7 +50,7 @@
                             <br />
                             <table class="power" cellpadding="10" cellspacing="0">
                                 <tr>
-                                    <th align="center">Attraction or Interaction Level</th>
+                                    <th align="center">Attraction Level</th>
                                 </tr>
                                 <tr>
                                     <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
@@ -67,15 +67,6 @@
                             <br /><br />
                             &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div id="videochatframe" hidden>
-                                        <iframe src="//player.vimeo.com/video/16452071" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </td>
                     <td width="421" height="564" class="the_wheel" align="center" valign="center">
                         <canvas id="canvas" width="420" height="420">
@@ -84,6 +75,15 @@
                     </td>
                 </tr>
             </table>
+            <div class="container" id="videochat" hidden>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="videochatframe">
+                            <iframe src="//player.vimeo.com/video/16452071" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script>
             // Create new wheel object specifying the parameters at creation time.
