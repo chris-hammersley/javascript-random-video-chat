@@ -1,3 +1,3 @@
 $( "#spin_button" ).click(function() {
-    $( "#videochatwindow" ).toggle();
+    $( "#videochatframe" ).toggle();
 });
