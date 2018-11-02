@@ -78,7 +78,7 @@
                         </canvas>
                     </td>
                     <!-- END SPIN Wheel Cell -->    
-                    <!-- START Video Chat Window -->  
+                    <!-- START Video Chat Player 1 -->  
                      <td>
                         <div class="container" id="videochatframe" style="display: inline-block">
                             <!--div class="row"-->
@@ -90,7 +90,20 @@
                             <!--/div-->
                         </div>
                      </td>
-                    <!-- END Video Chat Player -->      
+                    <!-- END Video Chat Player 1 -->      
+                    <!-- START Video Chat Player 2 -->  
+                     <td>
+                        <div class="container" id="videochatframe" style="display: inline-block">
+                            <!--div class="row"-->
+                                <!--div class="col-md-12"-->
+                                    <div id="videochat2" hidden>
+                                        <iframe src="https://www.youtube.com/embed/GbfKVLpHI8I?start=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                <!--/div-->
+                            <!--/div-->
+                        </div>
+                     </td>
+                    <!-- END Video Chat Player 2 -->   
                 </tr>
             </table>
         </div>
@@ -254,6 +267,7 @@
                 alert(indicatedSegment.text + ' says Hi! Are you ready to chat?');
                 // Show DIV
                 $("#videochat").show();
+                $("#videochat2").show();
             }
         </script>
     </body>
