@@ -74,10 +74,10 @@
                     </td>
                 </tr>
             </table>
-            <div class="container" id="videochat" style="display: inline-block">
+            <div class="container" style="display: inline-block">
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="videochatframe" hidden>
+                        <div id="videochat" hidden>
                             <iframe src="//player.vimeo.com/video/16452071" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                     </div>
@@ -241,6 +241,9 @@
             {
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
                 alert(indicatedSegment.text + ' says Hi! Are you ready to chat?');
+                div.videochat {
+                    display: show;
+                }
             }
         </script>
     </body>
