@@ -30,7 +30,6 @@
         <title>Random Video Dating App for Lonely People</title>
         <link rel="stylesheet" href="video-chat/main.css" type="text/css" />
         <script type="text/javascript" src="Winwheel.js"></script>
-        <script type="text/javascript" src="video-chat/showvideo.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -86,6 +85,10 @@
             </div>
         </div>
         <script>
+        // Toggle Show Video Chat Div
+        $( "#spin_button" ).click(function() {
+        $( "#videochat" ).toggle();
+        });
             // Create new wheel object specifying the parameters at creation time.
             var theWheel = new Winwheel({
                 'numSegments'       : 7,                 // Specify number of segments.
