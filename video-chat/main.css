@@ -51,6 +51,7 @@ table.power th
 {
     background-color: white;
     cursor: default;
+    margin-left: 10px;
 }
 
 td.pw1

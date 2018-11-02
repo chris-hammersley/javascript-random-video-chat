@@ -47,6 +47,7 @@
                         <div class="power_controls" style="display: inline-block">
                             <br />
                             <br />
+                            <!-- Attraction Selector Panel & SPIN button Table within Div within Cell-->
                             <table class="power" cellpadding="10" cellspacing="0">
                                 <tr>
                                     <th align="center">Attraction Level</th>
@@ -61,19 +62,24 @@
                                     <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
                                 </tr>
                             </table>
+                            <!-- END Attraction Selector Panel -->
                             <br />
-                            <img id="spin_button" src="video-chat/spin_off.png" alt="Spin" onClick="startSpin();" />
+                            <!-- SPIN Button - same DIV & CELL -->
+                            &nbsp;&nbsp;<img id="spin_button" src="video-chat/spin_off.png" alt="Spin" onClick="startSpin();" />
                             <br /><br />
                             &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
                         </div>
+                        <!-- END Attraction Selector Panel & SPIN button -->
                     </td>
+                    <!-- START SPIN Wheel Cell -->
                     <td width="421" height="564" class="the_wheel" align="center" valign="center">
                         <canvas id="canvas" width="420" height="420">
                             <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try a browser like Chrome or Firefox.</p>
                         </canvas>
                     </td>
-                </tr>
-            </table>
+                    <!-- END SPIN Wheel Cell -->    
+                    <!-- START Video Chat Window -->  
+                     <td>
                         <div class="container" id="videochatframe" style="display: inline-block">
                             <div class="row">
                                 <div class="col-md-12">
@@ -83,12 +89,17 @@
                                 </div>
                             </div>
                         </div>
+                     </td>
+                    <!-- END Video Chat Window -->      
+                </tr>
+            </table>
         </div>
         <script>
         // Toggle Show Video Chat Div
-       // $( "#spin_button" ).click(function() {
-       // $( "#videochat" ).toggle();
-       // });
+        // $( "#spin_button" ).click(function() {
+        // $( "#videochat" ).toggle();
+        // });
+
             // Create new wheel object specifying the parameters at creation time.
             var theWheel = new Winwheel({
                 'numSegments'       : 7,                 // Specify number of segments.
